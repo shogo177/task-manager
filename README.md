@@ -1,73 +1,31 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+Task Management App by Lee Lykaios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+(TypeScript + React + Auth0)
 
-Currently, two official plugins are available:
+This is a Task Management Application built with React, TypeScript, and Auth0 for authentication. The app allows users to create, edit, view, and delete tasks in a cyberpunk-themed interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
 
-## Expanding the ESLint configuration
+Dashboard: Displays a list of tasks with their details.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Task Creation & Editing: Add new tasks and edit existing ones.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Task Details: View detailed information for each task.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Authentication: Login and logout functionality using Auth0.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Protected Routes: Dashboard and task pages are accessible only to authenticated users.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Cyberpunk Theme: Neon colors, glowing buttons, and a visually appealing background.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Technologies Used
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
-# task-manager
->>>>>>> origin/main
+React + TypeScript
+
+React Router for routing
+
+React Context API for state management
+
+Auth0 for authentication
+
+Vite as the build tool
